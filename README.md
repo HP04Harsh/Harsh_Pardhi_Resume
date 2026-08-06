@@ -1,6 +1,6 @@
 # Harsh Pardhi - Portfolio
 
-A personal portfolio for Harsh Pardhi, a Cloud Platform Engineer focused on Azure DevOps, MLOps, and AI infrastructure.
+A personal portfolio for Harsh Pardhi, a Cloud Platform Engineer focused on Azure platform engineering, GenAIOps, and AI infrastructure.
 
 The site presents professional experience, technical skills, certifications, education, selected GitHub projects, and contact channels in a responsive single-page experience.
 
@@ -15,17 +15,7 @@ The site presents professional experience, technical skills, certifications, edu
 
 ## Features
 
-- Responsive portfolio layout for desktop and mobile
-- Hero profile with availability and primary contact actions
-- Experience timeline and project showcase
-- Skills matrix covering cloud, DevOps, security, and MLOps
-- Certifications and education sections
-- GitHub project links
-- Contact cards for email, phone, website, GitHub, and LinkedIn
-- Resume download button
-- Scroll reveal and parallax effects
-- Local-time and active-section navigation behavior
-
+ - In-progress: RAG assistant for operational knowledge (AKS + LiteLLM) — status: in progress (target ship ~Oct 1)
 ## Project Structure
 
 ```text

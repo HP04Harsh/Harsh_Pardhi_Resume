@@ -15,7 +15,7 @@ export function ProjectsPanel() {
             <span className="font-serif-i font-normal text-azure-deep"> builds.</span>
           </>
         }
-        description="Two projects that show the range — hardened infrastructure and AI-assisted provisioning."
+        description="Featured infrastructure and GenAIOps projects, plus an in-progress AKS RAG assistant." 
       />
 
       <div className="grid gap-6 lg:grid-cols-2">

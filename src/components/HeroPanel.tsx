@@ -42,7 +42,7 @@ export function HeroPanel() {
         {/* editorial intro */}
         <Panel className="reveal relative overflow-hidden p-7 md:p-10">
           <div className="bg-dotgrid pointer-events-none absolute -right-10 -top-10 h-44 w-44 opacity-40" />
-          <Eyebrow>Cloud Platform Engineer · Azure DevOps · MLOps</Eyebrow>
+          <Eyebrow>{profile.tagline}</Eyebrow>
 
           <h1 className="mt-5 font-display text-[3.2rem] font-bold leading-[0.92] tracking-tight text-ink sm:text-[4.2rem] md:text-[5.4rem]">
             <span
@@ -64,9 +64,8 @@ export function HeroPanel() {
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-[15px] leading-relaxed text-ink-soft md:text-base">
-            I build the dependable plumbing behind cloud and AI workloads — Azure administration,
-            infrastructure-as-code, observability and MLOps. I turn repetitive operational work into
-            automation that teams can actually trust.
+            I build dependable platform plumbing for Azure and GenAIOps workloads — infrastructure-as-code,
+            observability, automation and secure provisioning that teams can trust in production.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
@@ -94,6 +93,15 @@ export function HeroPanel() {
             >
               <Icon name="github" className="h-4 w-4" />
               GitHub
+            </a>
+            <a
+              href={profile.linkedinHref}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-2 py-3 font-mono text-xs uppercase tracking-[0.18em] text-muted transition-colors hover:text-ink"
+            >
+              <Icon name="linkedin" className="h-4 w-4" />
+              LinkedIn
             </a>
           </div>
 
@@ -137,7 +145,7 @@ export function HeroPanel() {
               <span className="text-muted">$</span>{" "}
               <span className="text-azure-deep">stack --top</span>
               {"\n"}
-              Azure · Terraform · Kubernetes · MLOps
+              Azure · Terraform · Kubernetes · GenAIOps
               {"\n\n"}
               <span className="text-muted">$</span> <span className="text-azure-deep">status</span>
               {"\n"}
@@ -151,8 +159,8 @@ export function HeroPanel() {
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
                 Certifications
               </p>
-              <p className="mt-2 font-display text-3xl font-bold text-ink">02</p>
-              <p className="mt-1 text-xs text-ink-soft">AZ-104 · AI-300</p>
+              <p className="mt-2 font-display text-3xl font-bold text-ink">04</p>
+              <p className="mt-1 text-xs text-ink-soft">AZ-104 · AZ-900 · AZ-400 (in progress) · Claude (in progress)</p>
             </Panel>
             <Panel className="lift p-4">
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">

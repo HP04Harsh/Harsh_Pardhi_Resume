@@ -5,7 +5,7 @@ import { Icon, type IconName } from "./Icon";
 const groupIcon: Record<string, IconName> = {
   cloud: "cloud",
   infra: "stack",
-  mlops: "beaker",
+  aigen: "beaker",
   auto: "cpu",
   sec: "shield",
 };
@@ -22,7 +22,7 @@ export function SkillsMatrix() {
             <span className="font-serif-i font-normal text-azure-deep"> one toolbelt.</span>
           </>
         }
-        description="From cloud provisioning to model lifecycle and governance — the layers I work across every week."
+        description="From cloud provisioning to GenAI operations and governance — the layers I work across every week."
       />
 
       <div className="grid gap-4 md:grid-cols-2">

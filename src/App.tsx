@@ -4,10 +4,11 @@ import { Sidebar } from "./components/Sidebar";
 import { HeroPanel } from "./components/HeroPanel";
 import { StatsRow } from "./components/StatsRow";
 import { AboutPanel } from "./components/AboutPanel";
-import { SkillsMatrix } from "./components/SkillsMatrix";
 import { ExperienceTimeline } from "./components/ExperienceTimeline";
 import { ProjectsPanel } from "./components/ProjectsPanel";
+import { SkillsMatrix } from "./components/SkillsMatrix";
 import { CertsEducation } from "./components/CertsEducation";
+import { BuildingPanel } from "./components/BuildingPanel";
 import { ContactPanel } from "./components/ContactPanel";
 import { useScrollReveal } from "./hooks/useScrollReveal";
 import { useActiveSection } from "./hooks/useActiveSection";
@@ -31,10 +32,11 @@ export default function App() {
           <HeroPanel />
           <StatsRow />
           <AboutPanel />
-          <SkillsMatrix />
           <ExperienceTimeline />
           <ProjectsPanel />
+          <SkillsMatrix />
           <CertsEducation />
+          <BuildingPanel />
           <ContactPanel />
         </main>
       </div>

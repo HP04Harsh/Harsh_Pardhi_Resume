@@ -37,7 +37,7 @@ export function ContactPanel() {
   return (
     <section id="contact" className="scroll-mt-24 pt-20 md:pt-28">
       <SectionHeader
-        index="08"
+        index="09"
         kicker="Contact"
         title={
           <>
