@@ -1,31 +1,36 @@
 import { profile, nav } from "../data/portfolio";
 import { cn } from "../utils/cn";
 import { Icon } from "./Icon";
+import { useState } from "react";
 
 function Avatar({ size = "lg" }: { size?: "lg" | "sm" }) {
   // Monogram avatar with graceful photo swap. Drop a photo at /harsh.jpg
   // in the public folder and it replaces the monogram automatically.
   const dim = size === "lg" ? "h-24 w-24" : "h-12 w-12";
+  const [loaded, setLoaded] = useState(false);
   return (
     <div className={cn("relative shrink-0", dim)}>
-      <div
-        className={cn(
-          "absolute inset-0 rounded-xl bg-gradient-to-br from-azure to-azure-deep",
-          size === "lg" ? "rounded-2xl" : "rounded-xl",
-        )}
-      />
-      <div
-        className={cn(
-          "absolute inset-0 bg-dotgrid opacity-30 mix-blend-overlay",
-          size === "lg" ? "rounded-2xl" : "rounded-xl",
-        )}
-      />
+      {!loaded && (
+        <>
+          <div
+            className={cn(
+              "absolute inset-0 rounded-xl bg-gradient-to-br from-azure to-azure-deep",
+              size === "lg" ? "rounded-2xl" : "rounded-xl",
+            )}
+          />
+          <div
+            className={cn(
+              "absolute inset-0 bg-dotgrid opacity-30",
+              size === "lg" ? "rounded-2xl" : "rounded-xl",
+            )}
+          />
+        </>
+      )}
       <img
         src="/harsh.jpg"
         alt="Harsh Pardhi"
-        onError={(e) => {
-          (e.currentTarget as HTMLImageElement).style.display = "none";
-        }}
+        onLoad={() => setLoaded(true)}
+        onError={() => setLoaded(false)}
         className={cn(
           "absolute inset-0 h-full w-full object-cover",
           size === "lg" ? "rounded-2xl" : "rounded-xl",
