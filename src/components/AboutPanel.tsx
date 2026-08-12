@@ -5,7 +5,7 @@ export function AboutPanel() {
   return (
     <section id="about" className="scroll-mt-24 pt-20 md:pt-28">
       <SectionHeader
-        index="02"
+        index=""
         kicker="Profile"
         title={
           <>

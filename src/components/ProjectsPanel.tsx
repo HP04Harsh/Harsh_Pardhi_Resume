@@ -15,7 +15,7 @@ export function ProjectsPanel() {
             <span className="font-serif-i font-normal text-azure-deep"> builds.</span>
           </>
         }
-        description="Featured infrastructure and GenAIOps projects, plus an in-progress AKS RAG assistant." 
+        description="Featured infrastructure and AIOps projects, plus an in-progress AKS RAG assistant."
       />
 
       <div className="grid gap-6 lg:grid-cols-2">

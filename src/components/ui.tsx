@@ -21,7 +21,7 @@ export function SectionHeader({
   title,
   description,
 }: {
-  index: string;
+  index?: string;
   kicker: string;
   title: ReactNode;
   description?: string;
@@ -30,8 +30,8 @@ export function SectionHeader({
     <div className="reveal mb-8 flex flex-col gap-4 border-b border-line pb-6 md:mb-10 md:flex-row md:items-end md:justify-between">
       <div>
         <div className="mb-3 flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted">
-          <span className="text-azure">{index}</span>
-          <span className="h-px w-8 bg-line-strong" />
+          {index ? <span className="text-azure">{index}</span> : null}
+          {index ? <span className="h-px w-8 bg-line-strong" /> : null}
           <span>{kicker}</span>
         </div>
         <h2 className="font-display text-3xl font-semibold tracking-tight text-ink md:text-[2.6rem] md:leading-[1.05]">

@@ -64,7 +64,7 @@ export function HeroPanel() {
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-[15px] leading-relaxed text-ink-soft md:text-base">
-            I build dependable platform plumbing for Azure and GenAIOps workloads — infrastructure-as-code,
+            I build dependable platform plumbing for Azure and AIOps workloads — infrastructure-as-code,
             observability, automation and secure provisioning that teams can trust in production.
           </p>
 
@@ -140,12 +140,12 @@ export function HeroPanel() {
               {"\n\n"}
               <span className="text-muted">$</span> <span className="text-azure-deep">role</span>
               {"\n"}
-              Cloud Platform Engineer
+              Cloud &amp; DevOps Engineer
               {"\n\n"}
               <span className="text-muted">$</span>{" "}
               <span className="text-azure-deep">stack --top</span>
               {"\n"}
-              Azure · Terraform · Kubernetes · GenAIOps
+              Azure · Kubernetes · Terraform · CI/CD · AIOps
               {"\n\n"}
               <span className="text-muted">$</span> <span className="text-azure-deep">status</span>
               {"\n"}
@@ -160,7 +160,7 @@ export function HeroPanel() {
                 Certifications
               </p>
               <p className="mt-2 font-display text-3xl font-bold text-ink">04</p>
-              <p className="mt-1 text-xs text-ink-soft">AZ-104 · AZ-900 · AZ-400 (in progress) · Claude (in progress)</p>
+              <p className="mt-1 text-xs text-ink-soft">AZ-104 · AZ-400 (in progress) · NVIDIA NCA · Claude (in progress)</p>
             </Panel>
             <Panel className="lift p-4">
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">

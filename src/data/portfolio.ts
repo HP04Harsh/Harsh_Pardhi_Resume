@@ -1,9 +1,9 @@
 export const profile = {
   firstName: "Harsh",
   lastName: "Pardhi",
-  role: "Cloud Platform Engineer",
-  tagline: "Azure · Kubernetes · Terraform · CI/CD · GenAIOps",
-  location: "India",
+  role: "Cloud & DevOps Engineer",
+  tagline: "Azure · Kubernetes · Terraform · CI/CD · AIOps",
+  location: "Chennai, India",
   timezone: "IST · UTC+5:30",
   email: "harshpardhi499@gmail.com",
   phone: "+91 95296 67349",
@@ -14,8 +14,8 @@ export const profile = {
   githubHref: "https://github.com/HP04Harsh",
   linkedin: "linkedin.com/in/harsh-pardhi",
   linkedinHref: "https://www.linkedin.com/in/harsh-pardhi",
-  availability: "Open to new opportunities",
-  currentRole: "Software Engineer @ Hexaware Technologies",
+  availability: "Open to opportunities",
+  currentRole: "Associate Software Engineer — Cloud Operations & Automation @ Hexaware Technologies Ltd",
   experienceYears: "2+",
 };
 
@@ -39,14 +39,14 @@ export const stats = [
 ];
 
 export const summaryParagraphs = [
-  "Cloud Platform Engineer with two years of hands-on experience at Hexaware Technologies, working across Azure cloud operations, Microsoft 365 and on-premises-to-cloud migration support. I build the plumbing that lets teams ship — PowerShell automation, SharePoint and storage analytics, Power BI dashboards and Power Platform workflows that replace repetitive manual work with reliable, observable systems.",
-  "Microsoft-certified in Azure Administration (AZ-104) and Azure Fundamentals (AZ-900), with AZ-400 (DevOps Engineer Expert) and Anthropic Claude certification in progress (Sep 2026). Hands-on platform experience across Terraform, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins, GitLab CI, Azure DevOps, Argo CD), Python, SQL, Azure AI Foundry and GenAIOps delivery. I focus on resilient infrastructure, secure deployment workflows, observability and the production engineering needed to run AI workloads reliably.",
+  "Cloud & DevOps Engineer with two years of hands-on experience at Hexaware Technologies, working across Azure cloud operations, Microsoft 365 and on-premises-to-cloud migration support. I build the plumbing that lets teams ship — PowerShell automation, SharePoint and storage analytics, Power BI dashboards and Power Platform workflows that replace repetitive manual work with reliable, observable systems.",
+  "Microsoft-certified in Azure Administration (AZ-104), with AZ-400 (DevOps Engineer Expert) and Anthropic Claude certification in progress. Hands-on platform experience across Terraform, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins, GitLab CI, Azure DevOps, Argo CD), Python, SQL, Azure AI Foundry and AIOps delivery. I focus on resilient infrastructure, secure deployment workflows, observability and the engineering needed to run AI workloads reliably.",
 ];
 
 export const quickFacts = [
-  { k: "Based in", v: "India" },
-  { k: "Current", v: "Hexaware Technologies" },
-  { k: "Focus", v: "Azure · GenAIOps · Platform Engineering" },
+  { k: "Based in", v: "Chennai, India" },
+  { k: "Current", v: "Hexaware Technologies Ltd · India" },
+  { k: "Focus", v: "Azure · AIOps · Platform Engineering" },
   { k: "Status", v: "Open to opportunities" },
   { k: "Timezone", v: "IST (UTC+5:30)" },
   { k: "Responds", v: "Within ~24 hours" },
@@ -54,16 +54,20 @@ export const quickFacts = [
 
 export const currentlyBuilding = [
   {
-    title: "AWS core + Terraform-on-AWS",
-    detail: "Building account structure, secure provisioning and drift-aware automation for multi-account AWS platform.",
+    title: "AIOps hardening — LLM evals, token-cost alerts, responsible-AI controls",
+    detail: "Strengthening model governance, cost visibility and safety checks for Azure AI workloads and automation tooling.",
   },
   {
-    title: "RAG/LiteLLM on Foundry",
-    detail: "Designing a retrieval-augmented assistant for operational knowledge and lightweight model inference on Azure AI Foundry.",
+    title: "AZ-400 (DevOps Engineer Expert) — expected Sep 2026",
+    detail: "Deepening end-to-end DevOps execution across pipelines, IaC, governance, automation and release reliability.",
   },
   {
-    title: "DNS deep-dive",
-    detail: "Researching edge, private DNS and multi-region name resolution for resilient platform design.",
+    title: "NVIDIA NCA (AI Infrastructure Operations) — in progress",
+    detail: "Expanding operational knowledge of AI infrastructure, inference environments and platform-level performance tuning.",
+  },
+  {
+    title: "Network troubleshooting deep-dive — tcpdump, dig, Wireshark",
+    detail: "Improving incident triage across DNS, packet-level diagnostics and cloud networking reliability patterns.",
   },
 ];
 
@@ -77,11 +81,11 @@ export const skillGroups = [
       "Azure Kubernetes Service",
       "Azure AI Foundry",
       "Azure OpenAI",
-      "AWS (EC2 · S3 · VPC · EKS)",
-      "CloudWatch",
-      "VM compute / VMSS",
       "Azure Monitor",
+      "VM compute / VMSS",
       "Microsoft Entra ID",
+      "Azure Policy",
+      "Azure Key Vault",
     ],
   },
   {
@@ -95,7 +99,6 @@ export const skillGroups = [
       "Azure DevOps",
       "Jenkins",
       "GitLab CI",
-      "Ansible",
       "Linux",
       "Bash",
       "Docker",
@@ -108,21 +111,18 @@ export const skillGroups = [
   },
   {
     id: "aigen",
-    title: "AI / GenAI Ops",
+    title: "AI / AIOps",
     blurb: "Operationalizing generated intelligence.",
     tags: [
       "Azure OpenAI",
       "AI Foundry",
-        "RAG",
-        "LiteLLM",
-        "Azure ML",
-      "vLLM (serving)",
-      "LLM evals (CI gate)",
-      "Responsible AI / content filters",
-      "Model serving",
+      "MLflow",
+      "DVC",
+      "RAG",
       "LLM observability",
-      "Copilot Studio",
+      "ServiceNow",
       "AI platform operations",
+      "Model evaluation",
     ],
   },
   {
@@ -131,6 +131,7 @@ export const skillGroups = [
     blurb: "Kill the manual steps.",
     tags: [
       "Python",
+      "PowerShell",
       "SQL",
       "REST APIs",
       "Power Apps",
@@ -151,9 +152,9 @@ export const skillGroups = [
       "Key Vault",
       "Prometheus",
       "Grafana",
-      "Datadog",
+      "Azure Monitor",
       "ServiceNow (ITSM)",
-      "tcpdump / dig",
+      "tcpdump / dig / Wireshark",
       "Cloud governance",
       "Incident response",
     ],
@@ -162,7 +163,7 @@ export const skillGroups = [
 
 export const experience = [
   {
-    role: "Software Engineer",
+    role: "Associate Software Engineer — Cloud Operations & Automation",
     company: "Hexaware Technologies Ltd",
     period: "July 2024 — Present",
     location: "India",
@@ -181,23 +182,23 @@ export const projects = [
   {
     id: "01",
     name: "InfraGenie — AI Platform Operations Assistant",
-    status: "Personal · GenAIOps",
+    status: "Personal · AIOps (PoC)",
     stack: ["Python", "Azure", "Terraform", "ServiceNow", "HF model link"],
     summary:
-      "A GenAIOps assistant that translates intent into Azure provisioning actions, supports seven personas, and includes 24x7 auto-heal with ServiceNow integration.",
+      "Demonstrates AIOps automation for Azure provisioning, incident workflows and human-in-the-loop platform operations.",
     points: [
       "Rewrote InfraGenie for seven operational personas, letting engineers, support, secops and platform owners drive infrastructure intent safely.",
       "Built 24x7 auto-heal workflows that detect drift and reopen ServiceNow tickets for corrective action and governance review.",
-      "Linked inference to a hosted HF model endpoint — a Qwen2.5-Code-7B I fine-tuned via SFT on Colab and published as InfraGenie-Azure-Expert — and enforced human-in-the-loop validation for production-ready provisioning requests.",
+      "Linked inference to a hosted HF model endpoint — a Qwen2.5-Code-7B I fine-tuned via SFT on Colab and published as InfraGenie-Azure-Expert — and enforced human-in-the-loop validation for provisioning requests.",
     ],
   },
   {
     id: "02",
     name: "Azure Multi-Region DR",
-    status: "Production-ready",
+    status: "Personal · IaC project",
     stack: ["Azure", "Terraform", "Traffic Manager", "VM Scale Sets", "Geo-replication"],
     summary:
-      "A multi-region Azure disaster recovery platform with active-passive failover, traffic routing and infrastructure continuity across recovery zones.",
+      "Demonstrates resilient Azure infrastructure design with failover automation, geo-replication and recovery-first IaC patterns.",
     points: [
       "Designed multi-region DR architecture using Traffic Manager, storage geo-replication and region-aware failover workflows.",
       "Automated Azure infrastructure provisioning with Terraform to reduce recovery build time and improve DR runbook reliability.",
@@ -207,23 +208,23 @@ export const projects = [
   {
     id: "03",
     name: "KubeScale-Ops",
-    status: "Kubernetes platform",
-    stack: ["AKS", "Terraform", "Kubecost", "Prometheus", "Ansible", "Helm", "GitOps"],
+    status: "Personal · K8s FinOps lab",
+    stack: ["AKS", "Terraform", "Kubecost", "Prometheus", "Helm", "GitOps"],
     summary:
-      "A Kubernetes platform automation stack for scale-aware operations, secure policy, and unified metrics for cloud-native application delivery.",
+      "Demonstrates AKS governance, FinOps visibility and repeatable Kubernetes platform automation for operational cost control.",
     points: [
       "Built a FinOps control plane: Kubecost and Prometheus track spend and utilization — flagged ~20% reclaimable spend via rightsizing.",
-      "Ansible executes automated self-healing for common cluster issues; all manifests are GitOps-managed with Helm and a KinD test loop.",
-      "Reusable Terraform modules with policy-based workload validation for safe AKS delivery.",
+      "Managed GitOps-driven AKS delivery with Helm and a KinD validation loop for policy-safe cluster changes.",
+      "Reusable Terraform modules with platform guardrails and workload validation for safe AKS delivery.",
     ],
   },
   {
     id: "04",
     name: "RAG assistant on AKS",
-    status: "In progress · Oct 2026",
+    status: "In progress",
     stack: ["AKS", "RAG", "LiteLLM", "Azure AI Foundry"],
     summary:
-      "Building a retrieval-augmented generation assistant on AKS to surface operational knowledge and lightweight model inference for platform teams.",
+      "In progress — demonstrates retrieval-augmented knowledge delivery for platform operations and AI-assisted troubleshooting workflows.",
     points: [
       "Designing an AKS-based RAG service that combines internal documentation and runtime telemetry for cloud ops support.",
       "Evaluating LiteLLM and Azure AI Foundry deployment patterns to keep inference efficient while preserving reliability.",
@@ -234,11 +235,11 @@ export const projects = [
 
 export const githubProjects = [
   {
-    name: "infraGenie — AI AIOps Platform",
-    repo: "infragenie-aiops",
-    href: "https://github.com/HP04Harsh/infragenie-aiops",
+    name: "InfraGenie — AI AIOps Platform",
+    repo: "infraGenie-AI-Automation-Platform",
+    href: "https://github.com/HP04Harsh/infraGenie-AI-Automation-Platform",
     lang: "Python",
-    desc: "AI automation platform for cloud provisioning, service incident orchestration, and intelligent remediation workflows.",
+    desc: "AI automation platform for Azure provisioning, AIOps workflows, and intelligent operational remediation.",
     tags: ["AI", "Terraform", "AIOps", "Python"],
   },
   {
@@ -255,7 +256,7 @@ export const githubProjects = [
     href: "https://github.com/HP04Harsh/KubeScale-Ops",
     lang: "HCL",
     desc: "Scalable AKS operations automation with secure cluster delivery patterns and unified platform observability.",
-    tags: ["AKS", "Terraform", "Kubecost", "Prometheus", "Ansible", "Helm", "GitOps"],
+    tags: ["AKS", "Terraform", "Kubecost", "Prometheus", "Helm", "GitOps"],
   },
   {
     name: "K8s Security & Observability",
@@ -270,32 +271,8 @@ export const githubProjects = [
     repo: "Azure-Devops-Pipeline",
     href: "https://github.com/HP04Harsh/Azure-Devops-Pipeline",
     lang: "HCL",
-    desc: "Professional Azure CI/CD framework combining Terraform infrastructure-as-code with Azure DevOps build and release pipelines.",
+    desc: "Azure CI/CD framework combining Terraform infrastructure-as-code with Azure DevOps release pipelines and governance controls.",
     tags: ["Azure", "Terraform", "CI/CD", "Azure DevOps"],
-  },
-  {
-    name: "React-azure-pipeline-mastery",
-    repo: "React-azure-pipeline-mastery",
-    href: "https://github.com/HP04Harsh/React-azure-pipeline-mastery",
-    lang: "JavaScript",
-    desc: "Production-ready React CI/CD template with GitHub Actions and Azure App Service deployment automation.",
-    tags: ["React", "Azure", "CI/CD", "GitHub Actions"],
-  },
-  {
-    name: "No-code-terraform-deployer",
-    repo: "No-code-terraform-deployer",
-    href: "https://github.com/HP04Harsh/No-code-terraform-deployer",
-    lang: "Terraform",
-    desc: "Automated Terraform provisioning pipeline with Power App and Power Automate integration for non-technical workflow owners.",
-    tags: ["Terraform", "Azure", "Automation", "Power Platform"],
-  },
-  {
-    name: "k8s-fullstack-ingress",
-    repo: "k8s-fullstack-ingress",
-    href: "https://github.com/HP04Harsh/k8s-fullstack-ingress",
-    lang: "Kubernetes",
-    desc: "Full-stack Kubernetes deployment template with automated ingress routing, observability, and scalable app delivery.",
-    tags: ["Kubernetes", "Ingress", "Full-stack", "Observability"],
   },
 ];
 
@@ -303,21 +280,21 @@ export const certifications = [
   {
     code: "AZ-104",
     title: "Microsoft Certified: Azure Administrator Associate",
-    issuer: "Microsoft",
-  },
-  {
-    code: "AZ-900",
-    title: "Microsoft Certified: Azure Fundamentals",
-    issuer: "Microsoft",
+    issuer: "Microsoft — Completed",
   },
   {
     code: "AZ-400",
     title: "Microsoft Certified: DevOps Engineer Expert",
-    issuer: "Microsoft (in progress)",
+    issuer: "Microsoft — expected Sep 2026 (in progress)",
+  },
+  {
+    code: "NVIDIA NCA",
+    title: "NVIDIA NCA — AI Infrastructure Operations",
+    issuer: "NVIDIA — in progress",
   },
   {
     code: "Claude Certified Associate",
-    title: "Anthropic Claude Certification",
+    title: "Claude Certified Associate — Anthropic",
     issuer: "Expected Sep 2026",
   },
 ];
@@ -345,22 +322,25 @@ export const marqueeTools = [
   "Kubernetes",
   "Docker",
   "GitHub Actions",
-  "PowerShell",
-  "Python",
-  "Azure OpenAI",
-  "AI Foundry",
-  "Prometheus",
-  "Grafana",
-  "Power BI",
-  "Helm",
-  "Key Vault",
-  "ArgoCD",
-  "SharePoint",
-  "SQL",
+  "Azure DevOps",
   "Jenkins",
   "GitLab CI",
-  "Ansible",
-  "Datadog",
-  "LiteLLM",
-  "vLLM",
+  "Argo CD",
+  "PowerShell",
+  "Python",
+  "SQL",
+  "REST APIs",
+  "Azure OpenAI",
+  "AI Foundry",
+  "MLflow",
+  "DVC",
+  "Prometheus",
+  "Grafana",
+  "Azure Monitor",
+  "ServiceNow",
+  "Helm",
+  "Key Vault",
+  "AKS",
+  "Wireshark",
+  "Power BI",
 ];

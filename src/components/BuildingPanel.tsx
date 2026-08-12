@@ -15,7 +15,7 @@ export function BuildingPanel() {
             <span className="font-serif-i font-normal text-azure-deep">platform step.</span>
           </>
         }
-        description="Proof that the focus is on AWS, Terraform-on-AWS, RAG and DNS for the next four months."
+        description="Focused on Azure operations, AIOps hardening and DevOps depth that strengthens the next platform move."
       />
 
       <div className="grid gap-4 md:grid-cols-3">
