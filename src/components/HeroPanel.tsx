@@ -155,7 +155,7 @@ export function HeroPanel() {
                 Certifications
               </p>
               <p className="mt-2 font-display text-3xl font-bold text-ink">04</p>
-              <p className="mt-1 text-xs text-ink-soft">AZ-104 · AZ-400 (in progress) · NVIDIA NCA · Claude (in progress)</p>
+              <p className="mt-1 text-xs text-ink-soft">AZ-104 · AZ-400 (in progress) · Terraform Associate (004) · Claude (in progress)</p>
             </Panel>
             <Panel className="lift p-4">
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">

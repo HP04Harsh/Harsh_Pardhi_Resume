@@ -62,8 +62,8 @@ export const currentlyBuilding = [
     detail: "Deepening end-to-end DevOps execution across pipelines, IaC, governance, automation and release reliability.",
   },
   {
-    title: "NVIDIA NCA (AI Infrastructure Operations) — in progress",
-    detail: "Expanding operational knowledge of AI infrastructure, inference environments and platform-level performance tuning.",
+    title: "Terraform Associate (004) — in progress",
+    detail: "Expanding Terraform depth across modules, remote state, and delivery patterns for repeatable Azure infrastructure work.",
   },
   {
     title: "Production Kubernetes depth — CKA preparation",
@@ -276,9 +276,9 @@ export const certifications = [
     issuer: "Microsoft · exam scheduled September 2026",
   },
   {
-    code: "NVIDIA NCA",
-    title: "NVIDIA NCA — AI Infrastructure Operations",
-    issuer: "NVIDIA — in progress",
+    code: "Terraform Associate (004)",
+    title: "Terraform Associate (004)",
+    issuer: "HashiCorp — in progress",
   },
   {
     code: "Claude Certified Associate",
