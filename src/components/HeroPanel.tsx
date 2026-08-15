@@ -64,8 +64,7 @@ export function HeroPanel() {
           </h1>
 
           <p className="mt-6 max-w-xl text-balance text-[15px] leading-relaxed text-ink-soft md:text-base">
-            I build dependable platform plumbing for Azure and AIOps workloads — infrastructure-as-code,
-            observability, automation and secure provisioning that teams can trust in production.
+            I automate the manual parts of cloud operations — Azure administration, PowerShell and Python automation, migrations, and reporting that teams actually use.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
@@ -134,22 +133,18 @@ export function HeroPanel() {
               }
             />
             <pre className="overflow-x-auto px-5 py-4 font-mono text-[12.5px] leading-relaxed text-ink-soft">
-              <span className="text-muted">$</span> <span className="text-azure-deep">whoami</span>
-              {"\n"}
-              harsh_pardhi
-              {"\n\n"}
               <span className="text-muted">$</span> <span className="text-azure-deep">role</span>
               {"\n"}
-              Cloud &amp; DevOps Engineer
+              Azure Cloud Engineer
               {"\n\n"}
               <span className="text-muted">$</span>{" "}
               <span className="text-azure-deep">stack --top</span>
               {"\n"}
-              Azure · Kubernetes · Terraform · CI/CD · AIOps
+              Azure · PowerShell · Terraform · AKS · Automation
               {"\n\n"}
               <span className="text-muted">$</span> <span className="text-azure-deep">status</span>
               {"\n"}
-              <span className="text-mint">●</span> open to opportunities
+              <span className="text-mint">●</span> Open to relocate: Bangalore, Hyderabad, Pune, Chennai
               <span className="caret ml-0.5 inline-block h-3.5 w-2 translate-y-0.5 bg-ink" />
             </pre>
           </Panel>

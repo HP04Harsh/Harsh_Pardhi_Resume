@@ -9,12 +9,12 @@ export function AboutPanel() {
         kicker="Profile"
         title={
           <>
-            A platform engineer who
+            An Azure engineer who
             <br />
-            <span className="font-serif-i font-normal text-azure-deep">sweats the reliability.</span>
+            <span className="font-serif-i font-normal text-azure-deep">automates the manual parts.</span>
           </>
         }
-        description="Two years turning cloud operations, migrations and reporting into automation that holds up in production."
+        description="Two years turning cloud operations, migrations and reporting into automation that teams can actually use."
       />
 
       <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
@@ -57,7 +57,7 @@ export function AboutPanel() {
             ))}
           </dl>
           <div className="border-t border-line bg-paper-2/60 px-5 py-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-            ↳ open to remote &amp; hybrid roles
+            ↳ open to relocate: Bangalore, Hyderabad, Pune, Chennai
           </div>
         </Panel>
       </div>

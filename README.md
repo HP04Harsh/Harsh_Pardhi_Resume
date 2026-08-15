@@ -1,6 +1,6 @@
 # Harsh Pardhi - Portfolio
 
-A personal portfolio for Harsh Pardhi, a Cloud & DevOps Engineer focused on Azure platform engineering, AIOps, and AI infrastructure.
+A personal portfolio for Harsh Pardhi, an Azure Cloud Engineer focused on Azure operations, automation, migrations and Terraform-driven platform work.
 
 The site presents professional experience, technical skills, certifications, education, selected GitHub projects, and contact channels in a responsive single-page experience.
 

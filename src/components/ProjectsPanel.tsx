@@ -15,7 +15,7 @@ export function ProjectsPanel() {
             <span className="font-serif-i font-normal text-azure-deep"> builds.</span>
           </>
         }
-        description="Featured infrastructure and AIOps projects, plus an in-progress AKS RAG assistant."
+        description="Featured infrastructure and AIOps projects with a focus on Azure operations, automation and client delivery."
       />
 
       <div className="grid gap-6 lg:grid-cols-2">
@@ -59,18 +59,48 @@ export function ProjectsPanel() {
                 ))}
               </ul>
 
-              <a
-                href={`mailto:${profile.email}?subject=${encodeURIComponent(
-                  `Let's talk about ${p.name}`,
-                )}`}
-                className="group mt-6 inline-flex items-center gap-2 self-start font-mono text-[12px] uppercase tracking-[0.16em] text-ink transition-colors hover:text-azure"
-              >
-                Discuss this project
-                <Icon
-                  name="arrowUpRight"
-                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                />
-              </a>
+              <div className="mt-6 flex flex-wrap items-center gap-3 self-start">
+                {"repoHref" in p && p.repoHref ? (
+                  <a
+                    href={p.repoHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group inline-flex items-center gap-2 font-mono text-[12px] uppercase tracking-[0.16em] text-ink transition-colors hover:text-azure"
+                  >
+                    GitHub repo
+                    <Icon
+                      name="arrowUpRight"
+                      className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
+                  </a>
+                ) : null}
+                {"modelHref" in p && p.modelHref ? (
+                  <a
+                    href={p.modelHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group inline-flex items-center gap-2 font-mono text-[12px] uppercase tracking-[0.16em] text-ink transition-colors hover:text-azure"
+                  >
+                    Hugging Face
+                    <Icon
+                      name="arrowUpRight"
+                      className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
+                  </a>
+                ) : null}
+                <a
+                  href={`mailto:${profile.email}?subject=${encodeURIComponent(
+                    `Let's talk about ${p.name}`,
+                  )}`}
+                  className="group inline-flex items-center gap-2 font-mono text-[12px] uppercase tracking-[0.16em] text-ink transition-colors hover:text-azure"
+                >
+                  Discuss this project
+                  <Icon
+                    name="arrowUpRight"
+                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  />
+                </a>
+              </div>
             </div>
           </Panel>
         ))}

@@ -4,10 +4,11 @@ import { Icon, type IconName } from "./Icon";
 
 const groupIcon: Record<string, IconName> = {
   cloud: "cloud",
-  infra: "stack",
-  aigen: "beaker",
-  auto: "cpu",
-  sec: "shield",
+  devops: "stack",
+  scripting: "cpu",
+  m365: "terminal",
+  ai: "beaker",
+  obs: "shield",
 };
 
 export function SkillsMatrix() {
@@ -64,8 +65,7 @@ export function SkillsMatrix() {
               core loop
             </span>
             <p className="mt-3 font-display text-xl font-semibold leading-snug">
-              Provision with Terraform, ship with CI/CD, observe with Prometheus &amp; Grafana,
-              govern with policy.
+              Automate with PowerShell and Python, provision with Terraform, ship with CI/CD, observe with Prometheus and Grafana.
             </p>
           </div>
           <div className="relative mt-6 flex items-center gap-2 font-mono text-[11px] text-paper/70">
