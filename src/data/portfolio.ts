@@ -221,6 +221,7 @@ export const projects = [
       "Managed GitOps-driven AKS delivery with Helm and a KinD validation loop for policy-safe cluster changes.",
       "Reusable Terraform modules with platform guardrails and workload validation for safe AKS delivery.",
     ],
+    repoHref: "https://github.com/HP04Harsh/KubeScale-Ops",
   },
 ];
 

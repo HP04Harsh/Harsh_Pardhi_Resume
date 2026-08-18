@@ -116,7 +116,7 @@
   }
 
   .marquee-track {
-    animation: marquee 38s linear infinite;
+    animation: marquee 76s linear infinite;
   }
   @keyframes marquee {
     from {
