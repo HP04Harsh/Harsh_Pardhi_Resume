@@ -103,7 +103,7 @@ export function Sidebar({ active }: { active: string }) {
             <p className="truncate font-display text-lg font-semibold leading-tight text-ink">
               Harsh Pardhi
             </p>
-            <p className="truncate text-xs text-ink-soft">{profile.role}</p>
+            <p className="text-xs leading-tight text-ink-soft">{profile.role}</p>
           </div>
         </div>
 
