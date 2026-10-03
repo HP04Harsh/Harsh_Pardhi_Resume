@@ -21,7 +21,7 @@ export function ExperienceTimeline() {
 
       <div className="space-y-6">
         {experience.map((job) => (
-          <Panel key={job.company} className="reveal overflow-hidden">
+          <Panel key={job.role} className="reveal overflow-hidden">
             {/* job header */}
             <div className="flex flex-col gap-4 border-b border-line p-6 md:flex-row md:items-center md:justify-between md:p-7">
               <div className="flex items-center gap-4">

@@ -11,6 +11,8 @@ const groupIcon: Record<string, IconName> = {
   obs: "shield",
 };
 
+const mutedSkills = new Set(["LangGraph", "MCP", "FastAPI", "OpenTelemetry"]);
+
 export function SkillsMatrix() {
   return (
     <section id="skills" className="scroll-mt-24 pt-20 md:pt-28">
@@ -19,7 +21,7 @@ export function SkillsMatrix() {
         kicker="Stack"
         title={
           <>
-            Five domains,
+            Six domains,
             <span className="font-serif-i font-normal text-azure-deep"> one toolbelt.</span>
           </>
         }
@@ -51,7 +53,7 @@ export function SkillsMatrix() {
             </div>
             <div className="mt-5 flex flex-wrap gap-2">
               {g.tags.map((t) => (
-                <Tag key={t}>{t}</Tag>
+                <Tag key={t} muted={mutedSkills.has(t)}>{t}</Tag>
               ))}
             </div>
           </Panel>

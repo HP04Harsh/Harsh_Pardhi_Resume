@@ -23,7 +23,7 @@ export function ProjectsPanel() {
           <Panel
             key={p.id}
             data-delay={String(i + 1) as "1" | "2"}
-            className="reveal lift flex flex-col overflow-hidden"
+            className={`reveal lift flex flex-col overflow-hidden ${p.inProgress ? "border-dashed opacity-80" : ""}`}
           >
             <CardChrome
               label={`~/projects/${p.id}_${p.name.split(" ")[0].toLowerCase()}`}

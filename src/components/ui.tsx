@@ -45,9 +45,16 @@ export function SectionHeader({
   );
 }
 
-export function Tag({ children }: { children: ReactNode }) {
+export function Tag({ children, muted = false }: { children: ReactNode; muted?: boolean }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-line bg-paper px-2.5 py-1 font-mono text-[11px] tracking-tight text-ink-soft transition-colors duration-300 hover:border-azure hover:bg-azure-soft hover:text-azure-deep">
+    <span
+      className={cn(
+        "inline-flex items-center rounded-full border px-2.5 py-1 font-mono text-[11px] tracking-tight transition-colors duration-300",
+        muted
+          ? "border-line bg-paper/50 text-muted"
+          : "border-line bg-paper text-ink-soft hover:border-azure hover:bg-azure-soft hover:text-azure-deep",
+      )}
+    >
       {children}
     </span>
   );

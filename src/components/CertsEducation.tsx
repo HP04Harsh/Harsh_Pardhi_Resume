@@ -9,13 +9,8 @@ export function CertsEducation() {
         <SectionHeader
           index="06"
           kicker="Certifications"
-          title={
-            <>
-              Vendor-verified,
-              <span className="font-serif-i font-normal text-azure-deep"> not self-rated.</span>
-            </>
-          }
-          description="Microsoft certifications that back up the hands-on work."
+          title="Certification status"
+          description="Earned, in-progress, and planned certifications."
         />
 
         <div className="grid gap-4 md:grid-cols-2">
@@ -27,9 +22,11 @@ export function CertsEducation() {
             >
               <span className="relative grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-azure-soft text-azure-deep">
                 <Icon name="shield" className="h-8 w-8" strokeWidth={1.4} />
-                <span className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-mint text-paper">
-                  <Icon name="check" className="h-3 w-3" strokeWidth={3} />
-                </span>
+                {c.state === "earned" && (
+                  <span className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-mint text-paper">
+                    <Icon name="check" className="h-3 w-3" strokeWidth={3} />
+                  </span>
+                )}
               </span>
               <div className="min-w-0">
                 <div className="flex items-center gap-2">

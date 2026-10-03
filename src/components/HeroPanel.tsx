@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import confetti from "canvas-confetti";
 import { profile } from "../data/portfolio";
-import { Eyebrow, Panel, CardChrome } from "./ui";
+import { Eyebrow, Panel, CardChrome, Tag } from "./ui";
 import { Icon } from "./Icon";
 
 const CONFETTI_COLORS = ["#1d4ed8", "#16307a", "#c2710c", "#0b0b0c", "#e6e3d8"];
@@ -38,43 +38,44 @@ export function HeroPanel() {
 
   return (
     <section id="home" className="scroll-mt-24 pt-8 md:pt-12">
-      <div className="grid gap-6 lg:grid-cols-[1.35fr_1fr]">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
         {/* editorial intro */}
         <Panel className="reveal relative overflow-hidden p-7 md:p-10">
           <div className="bg-dotgrid pointer-events-none absolute -right-10 -top-10 h-44 w-44 opacity-40" />
-          <Eyebrow>{profile.tagline}</Eyebrow>
-
-          <h1 className="mt-5 font-display text-[3.2rem] font-bold leading-[0.92] tracking-tight text-ink sm:text-[4.2rem] md:text-[5.4rem]">
+          <Eyebrow className="text-azure">
             <span
               className="confetti-name"
               onMouseEnter={fireNameConfetti}
               onClick={fireNameConfetti}
-              title="psst — hover me"
+              title="Harsh Pardhi"
             >
-              Harsh
+              HARSH PARDHI
             </span>
-            <br />
-            <span
-              className="confetti-name font-serif-i font-normal text-azure-deep"
-              onMouseEnter={fireNameConfetti}
-              onClick={fireNameConfetti}
-            >
-              Pardhi.
-            </span>
+          </Eyebrow>
+
+          <h1 className="mt-5 font-display text-[3rem] font-bold leading-[0.98] tracking-tight text-ink sm:text-[4rem] md:text-[5rem]">
+            GenAI Engineer
           </h1>
 
-          <p className="mt-6 max-w-xl text-balance text-[15px] leading-relaxed text-ink-soft md:text-base">
-            I automate the manual parts of cloud operations — Azure administration, PowerShell and Python automation, migrations, and reporting that teams actually use.
+          <p className="mt-4 max-w-xl text-balance text-[15px] leading-relaxed text-ink-soft md:text-base">
+            Building agentic AI &amp; RAG platforms on Azure &amp; AKS
           </p>
+
+          <div className="mt-5 flex flex-wrap gap-2" aria-label="Core technologies">
+            {["Azure", "AKS", "LangGraph", "MCP", "Terraform", "RAG"].map((tag) => (
+              <Tag key={tag}>{tag}</Tag>
+            ))}
+          </div>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <a
-              href={`mailto:${profile.email}`}
+              href="/Harsh_Pardhi_Resume.pdf"
+              download="Harsh_Pardhi_Resume.pdf"
               className="lift group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper hover:bg-azure-deep"
             >
-              Start a conversation
+              Resume
               <Icon
-                name="arrow"
+                name="download"
                 className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
               />
             </a>
@@ -83,6 +84,12 @@ export function HeroPanel() {
               className="lift inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface px-5 py-3 text-sm font-medium text-ink hover:border-ink"
             >
               See selected work
+            </a>
+            <a
+              href="#contact"
+              className="lift inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface px-5 py-3 text-sm font-medium text-ink hover:border-ink"
+            >
+              Contact
             </a>
             <a
               href={profile.githubHref}
@@ -104,21 +111,9 @@ export function HeroPanel() {
             </a>
           </div>
 
-          {/* currently row */}
-          <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-line pt-5 font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
-            <span className="flex items-center gap-2">
-              <span className="pulse-dot inline-block h-1.5 w-1.5 rounded-full bg-mint" />
-              {profile.currentRole}
-            </span>
-            <span className="hidden h-3 w-px bg-line-strong sm:block" />
-            <span className="flex items-center gap-1.5">
-              <Icon name="pin" className="h-3.5 w-3.5" /> {profile.location}
-            </span>
-            <span className="hidden h-3 w-px bg-line-strong sm:block" />
-            <span className="flex items-center gap-1.5">
-              <Icon name="clock" className="h-3.5 w-3.5" /> {profile.timezone}
-            </span>
-          </div>
+          <p className="mt-8 border-t border-line pt-5 font-mono text-[11px] tracking-tight text-muted">
+            // automate the manual parts. build agents that scale.
+          </p>
         </Panel>
 
         {/* terminal + mini cards */}
@@ -135,12 +130,12 @@ export function HeroPanel() {
             <pre className="overflow-x-auto px-5 py-4 font-mono text-[12.5px] leading-relaxed text-ink-soft">
               <span className="text-muted">$</span> <span className="text-azure-deep">role</span>
               {"\n"}
-              Azure Cloud Engineer
+              GenAI Engineer
               {"\n\n"}
               <span className="text-muted">$</span>{" "}
               <span className="text-azure-deep">stack --top</span>
               {"\n"}
-              Azure · PowerShell · Terraform · AKS · Automation
+              Azure · AKS · LangGraph · MCP · Terraform · RAG
               {"\n\n"}
               <span className="text-muted">$</span> <span className="text-azure-deep">status</span>
               {"\n"}
@@ -155,7 +150,7 @@ export function HeroPanel() {
                 Certifications
               </p>
               <p className="mt-2 font-display text-3xl font-bold text-ink">03</p>
-              <p className="mt-1 text-xs text-ink-soft">AZ-104 · AZ-400 (in progress) · Terraform Associate (004)</p>
+              <p className="mt-1 text-xs text-ink-soft">AZ-900 · AZ-104 · Terraform Associate</p>
             </Panel>
             <Panel className="lift p-4">
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
