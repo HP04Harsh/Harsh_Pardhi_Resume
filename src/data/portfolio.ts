@@ -1,7 +1,7 @@
 export const profile = {
   firstName: "Harsh",
   lastName: "Pardhi",
-  role: "GenAI Engineer",
+  role: "Applied AI Engineer",
   tagline: "Building agentic AI & RAG platforms on Azure & AKS",
   location: "Gondia, Maharashtra, India",
   timezone: "IST · UTC+5:30",
@@ -16,7 +16,7 @@ export const profile = {
   linkedinHref: "https://www.linkedin.com/in/harsh-pardhi",
   availability: "Open to relocate: Bangalore, Hyderabad, Pune, Chennai",
   currentRole: "Software Engineer @ Hexaware Technologies Ltd",
-  experienceYears: "2+",
+  experienceYears: "2 yrs 3 mos",
 };
 
 export const nav = [
@@ -54,10 +54,6 @@ export const quickFacts = [
 
 export const currentlyBuilding = [
   {
-    title: "AZ-104 (Azure Administrator Associate) — targeting October 2026",
-    detail: "Preparing for the Azure Administrator Associate certification.",
-  },
-  {
     title: "HashiCorp Terraform Associate (004) — in progress",
     detail: "Expanding module design, remote state and delivery patterns for repeatable Azure infrastructure.",
   },
@@ -81,7 +77,7 @@ export const skillGroups = [
       "Key Vault",
       "RBAC",
       "Azure OpenAI",
-      "Azure AI Search (coming)",
+      "Azure AI Search",
       "Azure Monitor",
     ],
   },
@@ -290,8 +286,8 @@ export const certifications = [
   {
     code: "AZ-104",
     title: "Azure Administrator Associate",
-    issuer: "🟡 Targeting Oct 2026",
-    state: "target",
+    issuer: "Earned",
+    state: "earned",
   },
   {
     code: "Terraform Associate (004)",
@@ -306,9 +302,9 @@ export const certifications = [
     state: "planned",
   },
   {
-    code: "AI-102",
-    title: "Azure AI Engineer Associate",
-    issuer: "Planned (Feb 2027)",
+    code: "AI-103",
+    title: "Azure AI Apps and Agents Developer Associate",
+    issuer: "Planned",
     state: "planned",
   },
 ];

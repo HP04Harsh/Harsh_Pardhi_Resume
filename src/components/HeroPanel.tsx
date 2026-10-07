@@ -54,7 +54,7 @@ export function HeroPanel() {
           </Eyebrow>
 
           <h1 className="mt-5 font-display text-[3rem] font-bold leading-[0.98] tracking-tight text-ink sm:text-[4rem] md:text-[5rem]">
-            GenAI Engineer
+            Applied AI Engineer
           </h1>
 
           <p className="mt-4 max-w-xl text-balance text-[15px] leading-relaxed text-ink-soft md:text-base">
@@ -130,7 +130,7 @@ export function HeroPanel() {
             <pre className="overflow-x-auto px-5 py-4 font-mono text-[12.5px] leading-relaxed text-ink-soft">
               <span className="text-muted">$</span> <span className="text-azure-deep">role</span>
               {"\n"}
-              GenAI Engineer
+              Applied AI Engineer
               {"\n\n"}
               <span className="text-muted">$</span>{" "}
               <span className="text-azure-deep">stack --top</span>
@@ -149,14 +149,14 @@ export function HeroPanel() {
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
                 Certifications
               </p>
-              <p className="mt-2 font-display text-3xl font-bold text-ink">03</p>
-              <p className="mt-1 text-xs text-ink-soft">AZ-900 · AZ-104 · Terraform Associate</p>
+              <p className="mt-2 font-display text-3xl font-bold text-ink">02</p>
+              <p className="mt-1 text-xs text-ink-soft">AZ-900 · AZ-104</p>
             </Panel>
             <Panel className="lift p-4">
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
                 Tenure
               </p>
-              <p className="mt-2 font-display text-3xl font-bold text-ink">2+</p>
+              <p className="mt-2 font-display text-3xl font-bold text-ink">2 yrs 3 mos</p>
               <p className="mt-1 text-xs text-ink-soft">years · Hexaware</p>
             </Panel>
           </div>

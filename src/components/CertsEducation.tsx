@@ -44,6 +44,9 @@ export function CertsEducation() {
             </Panel>
           ))}
         </div>
+        <p className="mt-3 font-mono text-[10px] tracking-tight text-muted">
+          AI-103 replaces the retired AI-102 exam and is built on Microsoft Foundry.
+        </p>
       </section>
 
       <section id="education" className="scroll-mt-24 pt-20 md:pt-28">

@@ -119,6 +119,9 @@ export function ContactPanel() {
           </span>
           <span>preferred timezone · {profile.timezone}</span>
         </div>
+        <p className="relative mt-4 text-sm leading-relaxed text-ink-soft">
+          Open to Applied AI Engineer and GenAI Engineer roles. Relocation: open.
+        </p>
       </Panel>
 
       <footer className="mt-14 flex flex-col gap-3 border-t border-line pt-6 font-mono text-[11px] tracking-tight text-muted sm:flex-row sm:items-center sm:justify-between">
