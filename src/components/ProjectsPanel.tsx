@@ -50,7 +50,7 @@ export function ProjectsPanel({
             <span className="font-serif-i font-normal text-azure-deep"> builds.</span>
           </>
         }
-        description="Explore applied AI and cloud platform work. Filter by focus or select a tool in the skills section."
+        description="Explore live AI demos and cloud platform builds. Filter by focus or select a tool in the skills section."
       />
 
       <div className="mb-6 flex flex-wrap items-center gap-2" role="group" aria-label="Filter featured projects">
@@ -148,6 +148,17 @@ export function ProjectsPanel({
                 </details>
 
                 <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-line pt-5">
+                  {"demoHref" in p && p.demoHref ? (
+                    <a
+                      href={p.demoHref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex min-h-10 items-center gap-2 rounded-lg bg-ink px-3 font-mono text-[11px] uppercase tracking-[0.13em] text-white transition-colors hover:bg-azure-deep"
+                    >
+                      Live demo
+                      <Icon name="arrowUpRight" className="h-3.5 w-3.5" />
+                    </a>
+                  ) : null}
                   {"repoHref" in p && p.repoHref ? (
                     <a
                       href={p.repoHref}

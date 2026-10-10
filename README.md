@@ -17,6 +17,9 @@ The site presents professional experience, technical skills, certifications, edu
 
 - Responsive single-page portfolio with keyboard-visible focus, reduced-motion support, and section navigation.
 - Featured project filters connect to selectable tools in the skills section.
+- Featured project cards link to live demos and source repositories where available.
+- Live demos: [InfraGenie](https://infragenie-ai.vercel.app/) and [Smart Search & Analyzer](https://smart-search-analyzer.vercel.app/).
+- Smart Search & Analyzer supports Groq chat, PDF/DOCX analysis, image questions, and webcam capture; visitors bring their own Groq API key.
 - Scrollable certification cards and expandable project and experience details.
 - Contact form validates in the browser and opens a pre-filled email draft; it does not send or store messages on a server.
 - Downloadable resume PDF is served from `public/Harsh_Pardhi_Resume.pdf`.
