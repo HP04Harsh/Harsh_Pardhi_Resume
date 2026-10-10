@@ -1,6 +1,6 @@
 # Harsh Pardhi - Portfolio
 
-A personal portfolio for Harsh Pardhi, an Azure Cloud Engineer focused on Azure operations, automation, migrations and Terraform-driven platform work.
+A personal portfolio for Harsh Pardhi, an Applied AI Engineer focused on agentic AI, enterprise RAG, Azure, cloud operations, and automation.
 
 The site presents professional experience, technical skills, certifications, education, selected GitHub projects, and contact channels in a responsive single-page experience.
 
@@ -15,7 +15,12 @@ The site presents professional experience, technical skills, certifications, edu
 
 ## Features
 
- - In-progress: RAG assistant for operational knowledge (AKS + LiteLLM) — status: in progress (target ship ~Oct 1)
+- Responsive single-page portfolio with keyboard-visible focus, reduced-motion support, and section navigation.
+- Featured project filters connect to selectable tools in the skills section.
+- Scrollable certification cards and expandable project and experience details.
+- Contact form validates in the browser and opens a pre-filled email draft; it does not send or store messages on a server.
+- Downloadable resume PDF is served from `public/Harsh_Pardhi_Resume.pdf`.
+
 ## Project Structure
 
 ```text
@@ -80,16 +85,27 @@ Most portfolio content is maintained in `src/data/portfolio.ts`. Update that fil
 
 ## Deployment
 
-This is a standard Vite application and can be deployed to Vercel, Netlify, GitHub Pages, or any static hosting provider.
+The portfolio is deployed to Vercel at [harsh-pardhi.vercel.app](https://harsh-pardhi.vercel.app/). The `vercel.json` configuration builds the Vite app and serves the generated `dist` directory, including the downloadable resume PDF.
 
-For Vercel or Netlify, use:
+To deploy updates, install the dependencies and run a production build:
 
-- Build command: `npm run build`
-- Output directory: `dist`
+```bash
+npm ci
+npm run build
+```
+
+With the Vercel CLI installed and authenticated, link the repository to the existing project once, then deploy to production:
+
+```bash
+vercel link --yes --project harsh-pardhi-resume --scope hp04harshs-projects
+vercel deploy --prod
+```
+
+The production deployment should serve the resume at `/Harsh_Pardhi_Resume.pdf`.
 
 ## Contact
 
 - Website: [harsh-pardhi.vercel.app](https://harsh-pardhi.vercel.app)
 - GitHub: [github.com/HP04Harsh](https://github.com/HP04Harsh)
 - LinkedIn: [linkedin.com/in/harsh-pardhi](https://www.linkedin.com/in/harsh-pardhi)
-- Email: [harshpardhi499@gmail.com](mailto:harshpardhi499@gmail.com)
+- Email: [harshpardhi477@gmail.com](mailto:harshpardhi477@gmail.com)

@@ -10,6 +10,9 @@ export function ParallaxBackground() {
   const grid = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (reduceMotion.matches) return;
+
     let raf = 0;
     const onScroll = () => {
       cancelAnimationFrame(raf);

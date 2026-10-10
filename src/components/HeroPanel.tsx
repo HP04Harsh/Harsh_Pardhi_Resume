@@ -37,10 +37,10 @@ export function HeroPanel() {
   };
 
   return (
-    <section id="home" className="scroll-mt-24 pt-8 md:pt-12">
+    <section id="home" className="scroll-mt-24 pt-6 md:pt-10">
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
         {/* editorial intro */}
-        <Panel className="reveal relative overflow-hidden p-7 md:p-10">
+        <Panel className="section-glow reveal relative overflow-hidden p-7 md:p-10 lg:min-h-[28rem]">
           <div className="bg-dotgrid pointer-events-none absolute -right-10 -top-10 h-44 w-44 opacity-40" />
           <Eyebrow className="text-azure">
             <span
@@ -53,12 +53,12 @@ export function HeroPanel() {
             </span>
           </Eyebrow>
 
-          <h1 className="mt-5 font-display text-[3rem] font-bold leading-[0.98] tracking-tight text-ink sm:text-[4rem] md:text-[5rem]">
-            Applied AI Engineer
+          <h1 className="mt-5 max-w-[12ch] font-display text-[2.75rem] font-bold leading-[0.99] tracking-[-0.055em] text-ink sm:text-[3.5rem] md:text-[4.25rem] xl:text-[4.7rem]">
+            Applied AI <span className="text-azure">Engineer</span>
           </h1>
 
           <p className="mt-4 max-w-xl text-balance text-[15px] leading-relaxed text-ink-soft md:text-base">
-            Building agentic AI &amp; RAG platforms on Azure &amp; AKS
+            Building agentic AI and enterprise RAG systems on Azure and AKS.
           </p>
 
           <div className="mt-5 flex flex-wrap gap-2" aria-label="Core technologies">
@@ -73,7 +73,7 @@ export function HeroPanel() {
               download="Harsh_Pardhi_Resume.pdf"
               className="lift group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper hover:bg-azure-deep"
             >
-              Resume
+              Download resume
               <Icon
                 name="download"
                 className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
@@ -83,7 +83,7 @@ export function HeroPanel() {
               href="#projects"
               className="lift inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface px-5 py-3 text-sm font-medium text-ink hover:border-ink"
             >
-              See selected work
+              Explore selected work
             </a>
             <a
               href="#contact"
@@ -112,7 +112,7 @@ export function HeroPanel() {
           </div>
 
           <p className="mt-8 border-t border-line pt-5 font-mono text-[11px] tracking-tight text-muted">
-            // automate the manual parts. build agents that scale.
+            Automate the manual parts. Build agents that scale.
           </p>
         </Panel>
 

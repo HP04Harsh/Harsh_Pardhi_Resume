@@ -24,18 +24,18 @@ export function Topbar() {
         <span className="hidden h-4 w-px bg-line-strong md:block" />
 
         <span className="hidden font-mono text-[11px] tracking-tight text-muted md:inline">
-          v2.6 · build stable
+          Cloud · AI · Automation
         </span>
 
         <div className="ml-auto flex items-center gap-2 sm:gap-4">
           {/* availability pill */}
-          <span className="hidden items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 font-mono text-[11px] tracking-tight text-ink-soft sm:inline-flex">
+          <span className="hidden items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 font-mono text-[11px] tracking-tight text-ink-soft xl:inline-flex">
             <span className="pulse-dot inline-block h-2 w-2 rounded-full bg-mint" />
             {profile.availability}
           </span>
 
           {/* live clock */}
-          <div className="hidden items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 font-mono text-[11px] tracking-tight text-ink-soft md:flex">
+          <div className="hidden items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 font-mono text-[11px] tracking-tight text-ink-soft 2xl:flex">
             <Icon name="clock" className="h-3.5 w-3.5 text-muted" />
             <span className="tabular-nums">{time}</span>
             <span className="text-faint">· {date} · IST</span>
@@ -58,11 +58,27 @@ export function Topbar() {
           >
             <Icon name="mail" className="h-4 w-4" />
           </a>
+          <a
+            href="/Harsh_Pardhi_Resume.pdf"
+            download="Harsh_Pardhi_Resume.pdf"
+            aria-label="Download resume"
+            className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-ink px-3 text-paper transition-colors hover:bg-azure-deep"
+          >
+            <Icon name="download" className="h-4 w-4" />
+            <span className="hidden font-mono text-[10px] uppercase tracking-[0.12em] lg:inline">Resume</span>
+          </a>
         </div>
       </div>
 
       {/* scroll progress hairline */}
-      <div className="relative h-px w-full bg-line">
+      <div
+        className="relative h-px w-full bg-line"
+        role="progressbar"
+        aria-label="Page reading progress"
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={Math.round(progress * 100)}
+      >
         <div
           className="absolute left-0 top-0 h-px bg-azure transition-[width] duration-150 ease-out"
           style={{ width: `${progress * 100}%` }}

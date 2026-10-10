@@ -54,8 +54,11 @@ function NavList({
 }) {
   return (
     <nav
+      aria-label="Portfolio sections"
       className={cn(
-        orientation === "vertical" ? "flex flex-col gap-0.5" : "flex items-center gap-1 overflow-x-auto",
+        orientation === "vertical"
+          ? "flex flex-col gap-0.5"
+          : "portfolio-nav-scroll flex items-center gap-1 overflow-x-auto",
       )}
     >
       {nav.map((item) => {
@@ -64,6 +67,7 @@ function NavList({
           <a
             key={item.id}
             href={`#${item.id}`}
+            aria-current={isActive ? "location" : undefined}
             className={cn(
               "group relative flex items-center gap-3 rounded-lg px-3 py-2 transition-colors duration-200",
               orientation === "horizontal" && "shrink-0",

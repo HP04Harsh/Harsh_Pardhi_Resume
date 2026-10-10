@@ -2,13 +2,11 @@ import { experience } from "../data/portfolio";
 import { SectionHeader, Panel } from "./ui";
 import { Icon } from "./Icon";
 
-const HASHES = ["a1f9c2d", "7b3e08a", "c44d1f6", "9e2a771", "3f8b5c0", "d61ae94", "52c0f18"];
-
 export function ExperienceTimeline() {
   return (
     <section id="experience" className="scroll-mt-24 pt-20 md:pt-28">
       <SectionHeader
-        index="04"
+        index="03"
         kicker="Experience"
         title={
           <>
@@ -16,7 +14,7 @@ export function ExperienceTimeline() {
             <span className="font-serif-i font-normal text-azure-deep"> shipped.</span>
           </>
         }
-        description="A commit-log view of the work — each line a real operational outcome."
+        description="Production outcomes across cloud migration, automation, analytics, and applied AI."
       />
 
       <div className="space-y-6">
@@ -59,9 +57,9 @@ export function ExperienceTimeline() {
                   </span>
                   <div className="min-w-0 flex-1">
                     <div className="mb-1 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.16em] text-faint">
-                      <span className="text-azure">{HASHES[i % HASHES.length]}</span>
+                      <span className="text-azure">Outcome {String(i + 1).padStart(2, "0")}</span>
                       <span className="h-px w-4 bg-line-strong" />
-                      <span>commit #{String(i + 1).padStart(2, "0")}</span>
+                      <span>{job.status === "Current" ? "Current role" : "Client delivery"}</span>
                     </div>
                     <p className="text-[14px] leading-relaxed text-ink-soft md:text-[15px]">{p}</p>
                   </div>
@@ -71,7 +69,7 @@ export function ExperienceTimeline() {
 
             <div className="flex items-center gap-2 border-t border-line bg-paper-2/50 px-6 py-3 font-mono text-[11px] tracking-tight text-muted md:px-7">
               <Icon name="terminal" className="h-3.5 w-3.5" />
-              {job.points.length} commits merged · main · production
+              {job.points.length} selected outcomes · enterprise delivery
             </div>
           </Panel>
         ))}

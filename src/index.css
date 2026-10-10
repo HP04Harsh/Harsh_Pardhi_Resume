@@ -29,6 +29,7 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    scroll-padding-top: 5rem;
   }
   body {
     background-color: var(--color-paper);
@@ -39,6 +40,14 @@
   ::selection {
     background: var(--color-azure);
     color: #fff;
+  }
+  :focus-visible {
+    outline: 3px solid #3b82f6;
+    outline-offset: 3px;
+  }
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
   }
   ::-webkit-scrollbar {
     width: 10px;
@@ -115,8 +124,43 @@
     transition-delay: 0.4s;
   }
 
+  .section-glow {
+    background:
+      radial-gradient(ellipse at 8% 0%, rgba(135, 206, 235, 0.18), transparent 42%),
+      radial-gradient(ellipse at 100% 100%, rgba(127, 216, 190, 0.13), transparent 38%);
+  }
+
+  .skill-ring {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+
+  .cert-track {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .cert-track::-webkit-scrollbar {
+    display: none;
+  }
+  .portfolio-nav-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .portfolio-nav-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card-visual {
+    background:
+      radial-gradient(circle at 80% 18%, rgba(255, 255, 255, 0.6), transparent 26%),
+      linear-gradient(135deg, rgba(135, 206, 235, 0.45), rgba(127, 216, 190, 0.38) 55%, rgba(255, 179, 71, 0.22));
+  }
+
   .marquee-track {
     animation: marquee 76s linear infinite;
+  }
+  .marquee-track:hover {
+    animation-play-state: paused;
   }
   @keyframes marquee {
     from {
@@ -185,6 +229,7 @@
   }
   .lift:hover {
     transform: translateY(-3px);
+    box-shadow: 0 18px 36px -26px rgba(17, 28, 46, 0.42);
   }
 
   .confetti-name {
@@ -206,5 +251,27 @@
   }
   .confetti-name:hover::after {
     transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    will-change: auto;
+  }
+  .marquee-track {
+    animation: none;
   }
 }
