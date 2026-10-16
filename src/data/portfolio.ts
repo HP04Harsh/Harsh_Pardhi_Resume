@@ -303,8 +303,8 @@ export const certifications = [
   {
     code: "AZ-104",
     title: "Azure Administrator Associate",
-    issuer: "Earned",
-    state: "earned",
+    issuer: "In Progress",
+    state: "in-progress",
   },
   {
     code: "Terraform Associate (004)",
@@ -315,13 +315,13 @@ export const certifications = [
   {
     code: "AZ-400",
     title: "DevOps Engineer Expert",
-    issuer: "Planned (Nov 2026)",
+    issuer: "Planned (Dec 2026)",
     state: "planned",
   },
   {
     code: "AI-103",
     title: "Azure AI Apps and Agents Developer Associate",
-    issuer: "Planned",
+    issuer: "Planned (Jan 2027)",
     state: "planned",
   },
 ];
