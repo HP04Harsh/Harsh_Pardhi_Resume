@@ -4,23 +4,18 @@ import { Icon, type IconName } from "./Icon";
 
 const groupIcon: Record<string, IconName> = {
   cloud: "cloud",
-  devops: "stack",
-  scripting: "cpu",
-  m365: "terminal",
+  frameworks: "stack",
+  automation: "terminal",
   ai: "beaker",
-  obs: "shield",
 };
 
 const groupTone: Record<string, string> = {
-  cloud: "text-sky-700 bg-sky-100",
+  cloud: "text-sky-800 bg-sky-100",
   ai: "text-emerald-700 bg-emerald-100",
-  scripting: "text-orange-700 bg-orange-100",
-  devops: "text-indigo-700 bg-indigo-100",
-  obs: "text-cyan-800 bg-cyan-100",
-  m365: "text-amber-800 bg-amber-100",
+  frameworks: "text-indigo-800 bg-indigo-100",
+  automation: "text-amber-900 bg-amber-100",
 };
 
-const mutedSkills = new Set(["LangGraph", "MCP", "FastAPI", "OpenTelemetry"]);
 const projectTools = new Set(projects.flatMap((project) => project.stack.map((tool) => tool.toLowerCase())));
 
 export function SkillsMatrix({
@@ -37,16 +32,16 @@ export function SkillsMatrix({
         kicker="Stack"
         title={
           <>
-            Six domains,
+            Four groups,
             <span className="font-serif-i font-normal text-azure-deep"> one toolbelt.</span>
           </>
         }
-        description="A practical stack spanning Azure platforms, agentic AI, automation, and production operations."
+        description="Technical skills listed in my resume."
       />
 
       <p className="mb-5 flex items-center gap-2 text-xs text-muted">
         <Icon name="spark" className="h-4 w-4 text-azure" />
-        Select a highlighted tool to find featured projects that use it. Counts show listed tools, not proficiency scores.
+        Select a highlighted tool to find featured projects that use it.
       </p>
 
       <div className="grid gap-4 md:grid-cols-2">
@@ -107,10 +102,10 @@ export function SkillsMatrix({
                           : ""
                       }`}
                     >
-                      <Tag muted={mutedSkills.has(tool)}>{tool}</Tag>
+                      <Tag>{tool}</Tag>
                     </button>
                   ) : (
-                    <Tag key={tool} muted={mutedSkills.has(tool)}>{tool}</Tag>
+                    <Tag key={tool}>{tool}</Tag>
                   );
                 })}
               </div>
@@ -124,7 +119,7 @@ export function SkillsMatrix({
               Engineering principle
             </span>
             <p className="mt-3 font-display text-xl font-semibold leading-snug tracking-tight text-ink md:text-2xl">
-              Automate the repeatable. Keep systems observable. Make the next change safe.
+              Building AI assistants and workflow automation on Azure and Microsoft 365.
             </p>
           </div>
           <div className="mt-5 flex shrink-0 items-center gap-2 rounded-full border border-line bg-white/70 px-4 py-2 font-mono text-[11px] text-ink-soft md:mt-0">
@@ -136,13 +131,13 @@ export function SkillsMatrix({
 
       <div className="reveal mt-6 overflow-hidden rounded-xl border border-line bg-surface/70 py-3">
         <div className="flex w-max marquee-track gap-3 px-3">
-          {[...marqueeTools, ...marqueeTools].map((tool, i) => (
+          {[marqueeTools.join(" · "), marqueeTools.join(" · ")].map((tools, index) => (
             <span
-              key={`${tool}-${i}`}
-              className="flex items-center gap-2 whitespace-nowrap font-mono text-xs uppercase tracking-[0.16em] text-muted"
+              key={index}
+              aria-hidden={index === 1}
+              className="whitespace-nowrap font-mono text-xs uppercase tracking-[0.16em] text-muted"
             >
-              <span className="h-1 w-1 rounded-full bg-azure" />
-              {tool}
+              {tools}
             </span>
           ))}
         </div>

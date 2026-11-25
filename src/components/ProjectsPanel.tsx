@@ -24,6 +24,39 @@ function matchesCategory(project: (typeof projects)[number], category: Category)
   return patterns[category].test(content);
 }
 
+function ProjectDetails({ points }: { points: string[] }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <details
+      className="group/details mt-5 border-t border-line pt-4"
+      onToggle={(event) => setOpen(event.currentTarget.open)}
+    >
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-1 text-sm font-semibold text-ink marker:hidden [&::-webkit-details-marker]:hidden">
+        What I built
+        <Icon
+          name="arrow"
+          className="h-4 w-4 rotate-90 text-muted transition-transform group-open/details:-rotate-90"
+        />
+      </summary>
+      {open && (
+        <ul className="mt-3 space-y-3">
+          {points.map((point, index) => (
+            <li key={index} className="flex gap-3 text-[13px] leading-relaxed text-ink-soft">
+              <Icon
+                name="check"
+                className="mt-0.5 h-4 w-4 shrink-0 text-mint"
+                strokeWidth={2}
+              />
+              <span>{point}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </details>
+  );
+}
+
 export function ProjectsPanel({
   selectedSkill,
   onClearSkill,
@@ -99,7 +132,7 @@ export function ProjectsPanel({
             <Panel
               key={p.id}
               data-delay={String((i % 2) + 1) as "1" | "2"}
-              className={`reveal lift group flex flex-col overflow-hidden ${p.inProgress ? "border-dashed opacity-90" : ""}`}
+              className="reveal lift group flex flex-col overflow-hidden"
             >
               <div className="card-visual relative flex h-36 items-end justify-between overflow-hidden px-5 py-4 sm:h-40">
                 <div className="absolute inset-0 bg-dotgrid opacity-30" />
@@ -120,32 +153,13 @@ export function ProjectsPanel({
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">{p.summary}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-muted">Tools:</span>
                   {p.stack.map((tool) => (
                     <Tag key={tool}>{tool}</Tag>
                   ))}
                 </div>
 
-                <details className="group/details mt-5 border-t border-line pt-4">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-1 text-sm font-semibold text-ink marker:hidden [&::-webkit-details-marker]:hidden">
-                    What I built
-                    <Icon
-                      name="arrow"
-                      className="h-4 w-4 rotate-90 text-muted transition-transform group-open/details:-rotate-90"
-                    />
-                  </summary>
-                  <ul className="mt-3 space-y-3">
-                    {p.points.map((point, j) => (
-                      <li key={j} className="flex gap-3 text-[13px] leading-relaxed text-ink-soft">
-                        <Icon
-                          name="check"
-                          className="mt-0.5 h-4 w-4 shrink-0 text-mint"
-                          strokeWidth={2}
-                        />
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
+                <ProjectDetails points={p.points} />
 
                 <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-line pt-5">
                   {"demoHref" in p && p.demoHref ? (

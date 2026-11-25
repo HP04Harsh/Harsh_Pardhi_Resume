@@ -47,8 +47,7 @@ export function ExperienceTimeline() {
             </div>
 
             {/* commit log */}
-            <ol className="relative p-6 md:p-7">
-              <span className="absolute bottom-7 left-[2.35rem] top-7 w-px bg-line md:left-[2.6rem]" />
+            <ol className="relative p-6 before:absolute before:bottom-7 before:left-[2.35rem] before:top-7 before:w-px before:bg-line md:p-7 md:before:left-[2.6rem]">
               {job.points.map((p, i) => (
                 <li key={i} className="reveal relative flex gap-4 pb-5 last:pb-0 md:gap-5" data-delay={String((i % 5) + 1) as "1" | "2" | "3" | "4" | "5"}>
                   <span className="relative z-10 mt-1.5 grid h-3 w-3 shrink-0 place-items-center">
@@ -59,7 +58,7 @@ export function ExperienceTimeline() {
                     <div className="mb-1 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.16em] text-faint">
                       <span className="text-azure">Outcome {String(i + 1).padStart(2, "0")}</span>
                       <span className="h-px w-4 bg-line-strong" />
-                      <span>{job.status === "Current" ? "Current role" : "Client delivery"}</span>
+                      <span>Experience outcome</span>
                     </div>
                     <p className="text-[14px] leading-relaxed text-ink-soft md:text-[15px]">{p}</p>
                   </div>
@@ -69,7 +68,7 @@ export function ExperienceTimeline() {
 
             <div className="flex items-center gap-2 border-t border-line bg-paper-2/50 px-6 py-3 font-mono text-[11px] tracking-tight text-muted md:px-7">
               <Icon name="terminal" className="h-3.5 w-3.5" />
-              {job.points.length} selected outcomes · enterprise delivery
+              {job.points.length} selected outcomes · measured impact
             </div>
           </Panel>
         ))}

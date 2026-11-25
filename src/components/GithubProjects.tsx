@@ -2,13 +2,6 @@ import { githubProjects, profile } from "../data/portfolio";
 import { Panel, Tag } from "./ui";
 import { Icon } from "./Icon";
 
-const langDot: Record<string, string> = {
-  Python: "#3572A5",
-  HCL: "#844FBA",
-  JavaScript: "#f1e05a",
-  TypeScript: "#3178c6",
-};
-
 export function GithubProjects() {
   return (
     <div className="mt-6">
@@ -49,7 +42,6 @@ export function GithubProjects() {
               href={p.href}
               target="_blank"
               rel="noreferrer"
-              aria-label={`Open ${p.name} on GitHub`}
               className="flex h-full flex-col p-5"
             >
               <div className="flex items-start justify-between gap-3">
@@ -71,18 +63,16 @@ export function GithubProjects() {
 
               <p className="mt-3 flex-1 text-[13px] leading-relaxed text-ink-soft">{p.desc}</p>
 
-              <div className="mt-4 flex flex-wrap gap-1.5">
+              <div className="mt-4 flex flex-wrap items-center gap-1.5">
+                <span className="mr-1 font-mono text-[10px] uppercase tracking-[0.12em] text-muted">Tools:</span>
                 {p.tags.map((t) => (
                   <Tag key={t}>{t}</Tag>
                 ))}
               </div>
 
               <div className="mt-4 flex items-center gap-2 border-t border-line pt-3 font-mono text-[11px] tracking-tight text-muted">
-                <span
-                  className="inline-block h-2.5 w-2.5 rounded-full"
-                  style={{ background: langDot[p.lang] ?? "#7b7b83" }}
-                />
-                {p.lang}
+                <Icon name="github" className="h-3.5 w-3.5" />
+                Source repository
                 <span className="ml-auto text-faint transition-colors group-hover:text-azure">
                   open repo →
                 </span>

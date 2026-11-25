@@ -4,7 +4,7 @@ import { Icon } from "./Icon";
 import { useState } from "react";
 
 function Avatar({ size = "lg" }: { size?: "lg" | "sm" }) {
-  // Monogram avatar with graceful photo swap. Drop a photo at /harsh.jpg
+  // Monogram avatar with graceful photo swap. Drop a photo at /harsh.webp
   // in the public folder and it replaces the monogram automatically.
   const dim = size === "lg" ? "h-24 w-24" : "h-12 w-12";
   const [loaded, setLoaded] = useState(false);
@@ -27,8 +27,10 @@ function Avatar({ size = "lg" }: { size?: "lg" | "sm" }) {
         </>
       )}
       <img
-        src="/harsh.jpg"
+        src="/harsh-128.webp"
         alt="Harsh Pardhi"
+        width={128}
+        height={112}
         onLoad={() => setLoaded(true)}
         onError={() => setLoaded(false)}
         className={cn(

@@ -38,7 +38,7 @@ export function Topbar() {
           <div className="hidden items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 font-mono text-[11px] tracking-tight text-ink-soft 2xl:flex">
             <Icon name="clock" className="h-3.5 w-3.5 text-muted" />
             <span className="tabular-nums">{time}</span>
-            <span className="text-faint">· {date} · IST</span>
+            <span className="text-faint">· {date}</span>
           </div>
 
           {/* quick links */}
@@ -61,7 +61,7 @@ export function Topbar() {
           <a
             href="/Harsh_Pardhi_Resume.pdf"
             download="Harsh_Pardhi_Resume.pdf"
-            aria-label="Download resume"
+            aria-label="Resume"
             className="inline-flex h-8 items-center justify-center gap-2 rounded-md bg-ink px-3 text-paper transition-colors hover:bg-azure-deep"
           >
             <Icon name="download" className="h-4 w-4" />

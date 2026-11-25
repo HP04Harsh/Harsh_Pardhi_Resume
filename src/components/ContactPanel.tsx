@@ -62,7 +62,7 @@ export function ContactPanel() {
             <span className="font-serif-i font-normal text-azure-deep">or just a question?</span>
           </>
         }
-        description="Reach out about Applied AI, GenAI engineering, or cloud platform roles. I usually reply within a day."
+        description="Reach out regarding Applied AI Engineer roles."
       />
 
       <div className="grid gap-5 lg:grid-cols-[0.85fr_1.15fr]">
@@ -74,7 +74,7 @@ export function ContactPanel() {
             </div>
             <span className="inline-flex shrink-0 items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-emerald-800">
               <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-mint" />
-              Open to roles
+              Applied AI
             </span>
           </div>
 
@@ -199,7 +199,7 @@ export function ContactPanel() {
                 <Icon name="arrowUpRight" className="h-4 w-4" />
               </button>
               <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
-                {profile.timezone} · replies within 24h
+                {profile.role}
               </span>
             </div>
             {draftOpened && (

@@ -1,6 +1,6 @@
 # Harsh Pardhi - Portfolio
 
-A personal portfolio for Harsh Pardhi, an Applied AI Engineer focused on agentic AI, enterprise RAG, Azure, cloud operations, and automation.
+A personal portfolio for Harsh Pardhi, an Applied AI Engineer building AI assistants and workflow automation on Azure and Microsoft 365.
 
 The site presents professional experience, technical skills, certifications, education, selected GitHub projects, and contact channels in a responsive single-page experience.
 
@@ -10,7 +10,6 @@ The site presents professional experience, technical skills, certifications, edu
 - TypeScript
 - Vite
 - Tailwind CSS 4
-- `canvas-confetti` for interactive UI details
 - `vite-plugin-singlefile` for the production bundle
 
 ## Features
@@ -22,15 +21,19 @@ The site presents professional experience, technical skills, certifications, edu
 - Smart Search & Analyzer supports Groq chat, PDF/DOCX analysis, image questions, and webcam capture; visitors bring their own Groq API key.
 - Scrollable certification cards and expandable project and experience details.
 - Contact form validates in the browser and opens a pre-filled email draft; it does not send or store messages on a server.
-- Downloadable resume PDF is served from `public/Harsh_Pardhi_Resume.pdf`.
+- Resume and cover letter PDFs are served from `public/`.
 
 ## Project Structure
 
 ```text
 .
 ├── public/
-│   ├── harsh.jpg
-│   └── Harsh_Pardhi_Resume.pdf
+│   ├── harsh.webp
+│   ├── harsh-128.webp
+│   ├── Harsh_Pardhi_Resume.pdf
+│   ├── Harsh_Pardhi_Cover_Letter.pdf
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
 │   ├── components/     Reusable page sections and UI components
 │   ├── data/           Portfolio content and project data
@@ -82,8 +85,9 @@ npm run preview
 
 Most portfolio content is maintained in `src/data/portfolio.ts`. Update that file to change profile details, navigation labels, skills, experience, projects, certifications, or education.
 
-- Replace `public/harsh.jpg` to update the profile photo.
+- Replace `public/harsh.webp` to update the profile photo.
 - Replace `public/Harsh_Pardhi_Resume.pdf` to update the downloadable resume.
+- Replace `public/Harsh_Pardhi_Cover_Letter.pdf` to update the downloadable cover letter.
 - Update contact links in `src/data/portfolio.ts` and `src/components/ContactPanel.tsx`.
 
 ## Deployment

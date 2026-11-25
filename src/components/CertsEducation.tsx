@@ -37,12 +37,12 @@ export function CertsEducation() {
           index="06"
           kicker="Certifications"
           title="Learning in motion."
-          description="Professional credentials and the next milestones in my cloud and AI learning path."
+          description="Microsoft Azure certifications."
         />
 
         <div className="mb-4 flex items-center justify-between gap-4">
           <p className="font-mono text-[10px] uppercase tracking-[0.17em] text-muted">
-            Credentials · swipe or use the arrows
+            Credentials
           </p>
           <div className="flex gap-2">
             <button
@@ -104,7 +104,7 @@ export function CertsEducation() {
           })}
         </div>
         <p className="mt-1 text-xs leading-relaxed text-muted">
-          AI-103 replaces the retired AI-102 exam and is built on Microsoft Foundry.
+          Planned: AI-103 · Terraform Associate
         </p>
       </section>
 
@@ -132,9 +132,7 @@ export function CertsEducation() {
                     <h3 className="font-display text-base font-semibold tracking-tight text-ink md:text-lg">
                       {e.degree}
                     </h3>
-                    <p className="text-sm text-ink-soft">
-                      {e.school} · <span className="text-muted">{e.location}</span>
-                    </p>
+                    <p className="text-sm text-ink-soft">{e.school}</p>
                     {e.meta && (
                       <p className="mt-1 inline-flex items-center gap-1.5 font-mono text-[11px] tracking-tight text-azure-deep">
                         <Icon name="gauge" className="h-3.5 w-3.5" />
